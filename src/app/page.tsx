@@ -83,7 +83,7 @@ const PortfolioPage = () => {
             <Image
               src="/image/profile.png"
               alt="profile"
-              className=" rounded-full h-80 w-80 border-2 z-10"
+              className=" rounded-full h-80 w-80 border-2 z-10 ml-5"
               width={1000}
               height={0}
             />
