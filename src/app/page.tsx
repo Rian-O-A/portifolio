@@ -80,18 +80,21 @@ const PortfolioPage = () => {
               </div>
             </div>
 
+            <div className="flex justify-center   sm:justify-center md:justify-center lg:justify-start xl:justify-start 2xl:justify-start">
+
             <Image
               src="/image/profile.png"
               alt="profile"
-              className=" rounded-full h-80 w-80 border-2 z-10 ml-5"
+              className=" rounded-full  border-2 z-10  w-64 h-64  sm:w-72 sm:h-72 md:w-80 md:h-80 xl:w-96 xl:h-96"
               width={1000}
               height={0}
             />
+            </div>
           </div>
         </div>
         <div className=" w-full flex justify-center items-center">
-          <div className="rounded-lg p-6 mb-10 md:w-2/3 lg:w-2/3">
-            <p className=" text-gray-200 leading-relaxed text-lg font-semibold">
+          <div className="rounded-lg p-6 mb-10 md:w-2/3 w-full">
+            <p className=" text-gray-200 leading-relaxed text-justify text-sm  sm:text-lg md:text-xl xl:text-2xl font-semibold">
               Com quase 4 anos de experiência, atuei no desenvolvimento de
               produtos de software escaláveis, desde a concepção até a entrega.
               Possuo habilidades para trabalhar em todas as camadas de uma
@@ -102,12 +105,12 @@ const PortfolioPage = () => {
           </div>
         </div>
         <div className="text-white w-full text-center mb-5">
-          <h1 className="text-5xl font-semibold ">CERTIFICADOS</h1>
+          <h1 className="text-3xl sm:text-5xl md:text-5xl  xl:text-5xl font-semibold ">CERTIFICADOS</h1>
         </div>
         <CertificatesPage />
 
         <div className="text-white w-full text-center mb-10 mt-10">
-          <h1 className="text-5xl font-semibold">PROJETOS</h1>
+          <h1 className="text-3xl sm:text-5xl md:text-5xl  xl:text-5xl font-semibold">PROJETOS</h1>
         </div>
         <section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 ">
           {repositories.map((project) => (
@@ -133,7 +136,7 @@ const PortfolioPage = () => {
       </main>
 
       <footer className="bg-transparent text-white p-4">
-        <div className="container mx-auto text-center">
+        <div className="container mx-auto text-center ">
           <p>&copy; 2024 Rian Almeida. Todos os direitos reservados.</p>
         </div>
       </footer>

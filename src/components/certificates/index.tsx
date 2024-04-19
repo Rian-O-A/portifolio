@@ -4,12 +4,12 @@ import React from 'react';
 
 const CertificateCard = ({ title, issuer, date, imageUrl, url }: any) => {
   return (
-    <button className="border rounded-lg p-6 mb-4 flex items-center text-white bg-black bg-opacity-80 shadow-md" onClick={() => window.open(url)}>
+    <button className="border rounded-lg mb:p-6 p-2 mb-4 flex items-center text-white bg-black bg-opacity-80 shadow-md" onClick={() => window.open(url)}>
       <div className="flex-shrink-0 mr-4">
-        <Image src={imageUrl} alt={issuer} className="w-32 h-32 rounded-lg object-cover"  width={1000} height={0}/>
+        <Image src={imageUrl} alt={issuer} className="w-24 h-24  sm:w-32 sm:h-32 md:w-40 md:h-40 xl:w-36 xl:h-36 rounded-lg object-cover"  width={1000} height={0}/>
       </div>
-      <div className='text-left'>
-        <h2 className="text-lg font-semibold mb-2">{title}</h2>
+      <div className='text-left text-xs sm:text-lg md:text-lg xl:text-lg'>
+        <h2 className=" font-semibold mb-2">{title}</h2>
         <p className="text-gray-400 mb-2">{issuer}</p>
         <p className="text-gray-300">{date}</p>
       </div>
@@ -89,7 +89,7 @@ const certificates = [
 const CertificatesPage = () => {
   return (
     
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 ">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
         {certificates.map((certificate, index) => (
           <CertificateCard key={index} {...certificate} />
         ))}
