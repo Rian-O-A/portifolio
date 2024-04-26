@@ -83,7 +83,7 @@ const PortfolioPage = () => {
             <div className="flex justify-center   sm:justify-center md:justify-center lg:justify-start xl:justify-start 2xl:justify-start">
 
             <Image
-              src="/image/profile.png"
+              src="https://rianalmeida-2025dev.web.app/image/profile.png"
               alt="profile"
               className=" rounded-full  border-2 z-10  w-64 h-64  sm:w-72 sm:h-72 md:w-80 md:h-80 xl:w-96 xl:h-96"
               width={1000}
